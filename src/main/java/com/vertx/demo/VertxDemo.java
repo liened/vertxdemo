@@ -5,7 +5,7 @@ import io.vertx.core.Vertx;
 import io.vertx.ext.web.Router;
 
 /**
- * Hello world!
+ * http://blog.csdn.net/janwen2010/article/details/72954153
  *
  */
 public class VertxDemo extends AbstractVerticle{
