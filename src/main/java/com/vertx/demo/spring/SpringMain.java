@@ -17,8 +17,8 @@ public class SpringMain {
         ctx.refresh();
         Vertx vertx = Vertx.vertx();
         //启动Spring模块
-        vertx.deployVerticle(new WebVerticle(ctx));
+        vertx.deployVerticle(new ServerVerticle(ctx));
         //部署服务器模块
-        vertx.deployVerticle(new ServerVerticle());
+        vertx.deployVerticle(new WebVerticle());
     }
 }
