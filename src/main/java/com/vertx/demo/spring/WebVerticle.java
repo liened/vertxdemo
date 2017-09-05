@@ -6,13 +6,13 @@ import org.springframework.context.ApplicationContext;
 /**
  * springVerticle作为事件总线中的后台处理程序，接收事件总线消息，并调用springService完成服务处理。
  */
-public class SpringVerticle extends AbstractVerticle{
+public class WebVerticle extends AbstractVerticle{
 
     private SpringService springService;
 
     public static final String GET_HELLO_MSG_SERVICE_ADDRESS = "get_hello_msg_service";
 
-    public SpringVerticle(ApplicationContext ctx){
+    public WebVerticle(ApplicationContext ctx){
         this.springService = (SpringService)ctx.getBean("springService");
     }
 

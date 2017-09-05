@@ -16,7 +16,7 @@ public class ServerVerticle extends AbstractVerticle{
         router.route("/spring/hello").handler(
             // 唤起vert.x的事件总线，并发送一个简单消息
             routingContext -> vertx.eventBus().<String>send(
-                    SpringVerticle.GET_HELLO_MSG_SERVICE_ADDRESS,// 消息地址
+                    WebVerticle.GET_HELLO_MSG_SERVICE_ADDRESS,// 消息地址
                     "event bus calls spring service",// 消息内容
                     result->{// 异步结果处理
                         if (result.succeeded()){// 成功的话，返回处理结果给前台，这里的处理结果就是service返回的一段字符串
