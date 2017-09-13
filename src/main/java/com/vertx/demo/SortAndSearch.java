@@ -75,7 +75,9 @@ public class SortAndSearch {
         return a;
     }
 
-    //冒泡排序 - 改造二：加了flag，如果后面已经拍好序的话不用再次遍历
+
+    //冒泡排序 - 改造二：加了flag，如果后面已经拍好序的话不用再次遍历,【注】：此方法有弊端，如果后面没有拍好续的话，如{2,1,4,6,5}，后面也不会重新排序了，所以此方法不可取。
+    @Deprecated
     public int[] bubbleSort3(int[] a){
         boolean flag = true;
         for (int i=0;i<a.length && flag;i++){
