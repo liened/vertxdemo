@@ -123,7 +123,13 @@ public class SortAndSearch {
         return a;
     }
 
-    //对折查找
+    /**
+     * 对折查找
+     * @param a 要查找的数组
+     * @param n 元素个数
+     * @param key 要查找的数
+     * @return
+     */
     public int search(int[] a,int n,int key){
         int low,high,mid;
         low = 1;
