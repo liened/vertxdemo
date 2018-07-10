@@ -1,4 +1,4 @@
-package com.vertx.demo;
+package com.vertx.demo.other;
 
 import java.util.ArrayList;
 import java.util.List;
